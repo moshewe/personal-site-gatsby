@@ -76,10 +76,10 @@ class BlogPostTemplate extends React.Component {
             position: 'relative',
           }}
         />
-        <div
+        <pre
           className="post-copyright">
-          {{ post.metadata.copyright }}
-        </div>
+          { JSON.stringify(post) }
+        </pre>
         <div
           className="post-content"
           dangerouslySetInnerHTML={{ __html: post.content }}
