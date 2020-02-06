@@ -134,6 +134,7 @@ export const pageQuery = graphql`
         hero {
           imgix_url
         }
+        copyright
       }
     }
     cosmicjsSettings(slug: { eq: "general" }) {
@@ -144,7 +145,6 @@ export const pageQuery = graphql`
         author_avatar {
           imgix_url
         }
-        copyright
       }
     }
   }
