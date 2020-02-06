@@ -78,7 +78,7 @@ class BlogPostTemplate extends React.Component {
         />
         <div
           className="post-copyright">
-          {{ JSON.stringify(post) }}
+          {{ post.metadata.copyright }}
         </div>
         <div
           className="post-content"
