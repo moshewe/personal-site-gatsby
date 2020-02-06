@@ -77,8 +77,8 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <div
-          className="post-content"
-          dangerouslySetInnerHTML={{ __html: post.copyright }}
+          className="post-copyright"
+          dangerouslySetInnerHTML={{ __html: post.metadata.copyright }}
         />
         <div
           className="post-content"
