@@ -77,9 +77,9 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <div
-          className="post-copyright"
-          dangerouslySetInnerHTML={{ __html: post.metadata.copyright }}
-        />
+          className="post-copyright">
+          {{ JSON.stringify(post) }}
+        </div>
         <div
           className="post-content"
           dangerouslySetInnerHTML={{ __html: post.content }}
