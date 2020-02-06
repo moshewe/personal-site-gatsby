@@ -144,6 +144,7 @@ export const pageQuery = graphql`
         author_avatar {
           imgix_url
         }
+        copyright
       }
     }
   }
